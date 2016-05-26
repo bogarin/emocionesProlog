@@ -68,7 +68,7 @@ emociones:-
         (sestaPregunta ->
           (septimaPregunta -> write('estas preocupado '),true;confucion);
           (octavaPregunta -> write('estas avergonzado '),true;confucion));confucion);confucion)
-    ;confucion ));(novenaPregunta ->
+    ;confucion);confucion);(novenaPregunta ->
       (decimaPregunta -> write('estas emocionado '),true;
       write('estas feliz'),false) ;
       confucion)).
