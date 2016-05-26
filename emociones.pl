@@ -56,6 +56,9 @@ write_ln('esperas alguna noticia en particular? '),read(Res)
 ,(numero(Res) -> true;
 false).
 
+confucion:-
+  write('ps ya nose has de ser mujer en sus dias!!!! ').
+
 
 emociones:-
   (primerPregunta ->
@@ -63,10 +66,9 @@ emociones:-
     (terceraPregunta ->
       (cuartaPregunta -> (quintaPregunta ->
         (sestaPregunta ->
-          (septimaPregunta -> write('estas preocupado '),true;write('ps ya nose has de ser mujer en sus dias!!!! '),false);
-          (octavaPregunta -> write('estas avergonzado '),true;
-          write('ps ya nose has de ser mujer en sus dias!!!! '),false));false);false)
-    ;false ));(novenaPregunta ->
+          (septimaPregunta -> write('estas preocupado '),true;confucion);
+          (octavaPregunta -> write('estas avergonzado '),true;confucion));confucion);confucion)
+    ;confucion ));(novenaPregunta ->
       (decimaPregunta -> write('estas emocionado '),true;
       write('estas feliz'),false) ;
-      write('ps ya nose has de ser mujer en sus dias!!!! '),false)).
+      confucion)).
